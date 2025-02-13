@@ -32,21 +32,8 @@ class MyGUI:
 
     def print_message(self):
         input = self.textbox.get('1.0', 'end-1c')
-        if input == "nart" :
-            print("klasik bir ibne")
-        elif input == "savas" :
-            print("got deli")
-        elif input == "osman" :
-            print("31 damage ile sampiyon")
-        elif input == "asrin" :
-            print("ben bu kadina asik olsam beni yargilar misiniz")
-        elif input == "nuri" :
-            print("yargilarim")     
-        else :
-            messagebox.showinfo(title="message", message=input)
-
+        messagebox.showinfo(title="message", message=input)
         self.textbox.delete('1.0', 'end')
-        input = ""
 
 
     def show_message(self):
